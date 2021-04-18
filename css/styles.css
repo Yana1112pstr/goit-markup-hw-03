@@ -306,6 +306,7 @@ img {
 .text-portfolio {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-left: -30px;
     flex-basis: calk((100%-30px)/3);
 
