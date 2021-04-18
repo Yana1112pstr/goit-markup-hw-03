@@ -63,7 +63,7 @@ img {
   }
 
 .container {
-    width: 1200px;
+    width: 1600px;
     padding-right: 15px;
     padding-left: 15px;
     margin-left: auto;
@@ -162,6 +162,7 @@ img {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    text-transform: uppercase;
     
     color: var(--alt-title-color);
 }
@@ -215,8 +216,7 @@ img {
 
 /*Команда*/
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 94px 215px;
 }
 
 .team {
@@ -226,6 +226,7 @@ img {
 .card-set {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-left: -30px;
     flex-basis: calk((100%-30px)/4);
   }
@@ -257,6 +258,12 @@ img {
 }
 
 /*портфолио*/
+.portfolio {
+    display: flex;
+    justify-content: center;
+    padding: 50px 215px;
+}
+
 .portfolio-list {
     display: flex;
     justify-content: center;
@@ -314,24 +321,22 @@ img {
 
 /*footer*/
 .footer {
+    padding-top: 60px;
+    padding-left: 215px;
     background: var(--darc-bg);    
 }
 
 .footer .logo {
-    margin-top: 60px;
     margin-bottom: 20px;
-    margin-left: 215px;
 }
 
 .address {
     font-style: inherit;
     color: var(--alt-title-color);
-    margin-left: 215px;
 }
 
 .contacts-link {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    margin-left: 215px;
     margin-bottom: 9px;
 }
