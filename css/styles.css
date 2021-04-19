@@ -75,19 +75,19 @@ img {
 }
 
 /*шапка сайта*/
+.bg-header {
+    background: var(--three-bg);
+}
+
 .header {
     display: flex;
-    align-items: center; 
-
-    background: var(--three-bg);
 }
 
 .logo {
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 92px;
-    margin-left: auto;
+    margin-top: 24px;
+    margin-bottom: 25px;
+    margin-right: 93px;
 
     font-family: var(--logo-font);
     font-weight: bold;
@@ -113,8 +113,7 @@ img {
 
 .site-nav .link{
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    align-items: center;
 
     font-weight: 500;
     font-size: 14px;
@@ -139,8 +138,7 @@ img {
 
 .auth-nav {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
@@ -232,7 +230,15 @@ img {
   }
 
 .item-section {
-    margin-left: 30px;
+    margin-left:non() 30px;
+}
+
+.text-name {
+    text-align: center;
+
+    background: var(--three-bg);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
@@ -249,13 +255,7 @@ img {
     line-height: 1.18;
 }
 
-.text-name {
-    text-align: center;
 
-    background: var(--three-bg);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
 
 /*портфолио*/
 .portfolio {
@@ -324,7 +324,7 @@ img {
 .footer {
     padding-top: 60px;   
     padding-left: 215px;
-    background: var(--darc-bg);    
+    background-color: var(--darc-bg);    
 }
 
 .footer .logo {
