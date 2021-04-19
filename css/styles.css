@@ -77,10 +77,13 @@ img {
 /*шапка сайта*/
 .bg-header {
     background: var(--three-bg);
+
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header {
     display: flex;
+
 }
 
 .logo {
@@ -149,15 +152,22 @@ img {
 }
 
 /*Заголовок*/
-.main-title {
-    justify-content: center;
-    text-align: center;
-    padding: 200px 452px;
-
+.bg-title {
     background: var(--darc-bg);
 }
 
-.main-title .page-title {
+.main-title {
+    justify-content: center;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.page-title {
+    justify-content: center;
+    text-align: center; 
+    margin-bottom: 30px;
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -169,6 +179,9 @@ img {
 .btn {
     width: 200px;
     height: 50px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     font-weight: bold;
     font-size: 16px;
@@ -184,6 +197,11 @@ img {
 }
 
 /*Принципы работы*/
+.bg-principle {
+    padding-top: 94px;
+
+    background-color:var(--three-bg);
+}
 
 .principle {
     font-size: 14px;
@@ -200,9 +218,8 @@ img {
 }
 
 /*Чем занимаемся*/
-.section-work {
-    margin-top: 94px;
-    margin-bottom: 94px;
+.work {
+    background-color:var(--three-bg);
 }
 
 .section-title {
@@ -225,13 +242,12 @@ img {
 .card-set {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-left: -30px;
+    justify-content: space-between;
     flex-basis: calk((100%-30px)/4);
   }
 
-.item-section {
-    margin-left:non() 30px;
+.item-section:not(:last-child) {
+    margin-right: 30px;
 }
 
 .text-name {
@@ -259,10 +275,10 @@ img {
 
 
 /*портфолио*/
-.portfolio {
-    display: flex;
-    justify-content: center;
-    padding: 50px 215px;
+.bg-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--three-bg);
 }
 
 .portfolio-list {
@@ -270,13 +286,13 @@ img {
     justify-content: center;
 }
 
-.portfolio-btn {
-    margin-top: 94px;
+.portfolio-btn:not(:last-child) {
     margin-right: 8px;
-    margin-bottom: 50px;
 }
 
 .nav-btn {
+    height: 38px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -294,22 +310,15 @@ img {
     background: var(--accent-color);
 }
 
-.page-title-portfolio {
+.title-portfolio {
     display: none;
-}
-
-.name-portfolio {
-    font-size: 18px;
-    line-height: 2.0;
-    letter-spacing: 0.06em;
 }
 
 .text-portfolio {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-left: -30px;
-    flex-basis: calk((100%-30px)/3);
+    justify-content: space-between;
+    padding-top: 50px;
 
     font-size: 16px;
     line-height: 1.87;
@@ -321,14 +330,30 @@ img {
     border: 1px solid #EEEEEE;
 }
 
-/*footer*/
-.footer {
-    padding-top: 60px;   
-    padding-left: 215px;
-    background-color: var(--darc-bg);    
+.portfolio-galeri:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.name-portfolio {
+    margin-top: 20px;
+    margin-bottom: 4px;
+    margin-left: 24px;
+
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+
+.text {
+    margin-left: 24px;   
+}
+
+/*footer*/
+.footer {
+    background-color: var(--darc-bg);
+}
 .footer .logo {
+    padding-top: 60px;
     margin-bottom: 20px;
 }
 
