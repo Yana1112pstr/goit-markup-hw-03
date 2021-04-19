@@ -108,12 +108,17 @@ img {
 
 .site-nav {
     display: flex;
+    align-items: center;
+
     margin-right: 331px;
+}
+
+.site-nav .item:not(:last-child){
+    margin-right: 50px;
 }
 
 .site-nav .link{
     display: block;
-    align-items: center;
 
     font-weight: 500;
     font-size: 14px;
@@ -130,10 +135,6 @@ img {
 
 .site-nav .current {
     color: var(--accent-color);
-}
-
-.site-nav .item:not(:last-child){
-    margin-right: 50px;
 }
 
 .auth-nav {
