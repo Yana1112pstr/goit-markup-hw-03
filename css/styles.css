@@ -63,9 +63,9 @@ img {
   }
 
 .container {
-    width: 1600px;
-    padding-right: 215px;
-    padding-left: 215px;
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -88,9 +88,6 @@ img {
 
 .logo {
     display: flex;
-    margin-top: 24px;
-    margin-bottom: 25px;
-    margin-right: 93px;
 
     font-family: var(--logo-font);
     font-weight: bold;
@@ -100,6 +97,12 @@ img {
 
     color: var(--accent-color);
     }
+
+.header-logo {
+    margin-top: 24px;
+    margin-bottom: 25px;
+    margin-right: 93px;    
+}
 
 .upper-logo {
     color: var(--title-color);
@@ -232,10 +235,11 @@ img {
 
 /*Команда*/
 .section {
-    padding: 94px 215px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
-.team {
+.bg-team {
     background: var(--second-bg);
 }
 
@@ -243,7 +247,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex-basis: calk((100%-30px)/4);
   }
 
 .item-section:not(:last-child) {
@@ -251,25 +254,25 @@ img {
 }
 
 .text-name {
-    text-align: center;
-
     background: var(--three-bg);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
+.team-text{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
 .team-title {
     margin-bottom: 10px;
-    margin-top: 30px;
-
     font-size: 16px;
     line-height: 1.18;
 }
 
-.team-text{
-    margin-bottom: 30px;
-    font-size: 16px;
-    line-height: 1.18;
+.text-prof {
+    margin-bottom: 0px;
 }
 
 
@@ -284,6 +287,7 @@ img {
 .portfolio-list {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .portfolio-btn:not(:last-child) {
@@ -291,7 +295,10 @@ img {
 }
 
 .nav-btn {
-    height: 38px;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
 
     font-weight: 500;
     font-size: 16px;
@@ -317,15 +324,18 @@ img {
 .text-portfolio {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 50px;
+    margin-top: -30px;
+    margin-left: -30px;  
 
     font-size: 16px;
     line-height: 1.87;
 }
 
 .portfolio-galeri {
-    margin-bottom: 30px;
+    flex-basis: calc(100%/3 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
 }
@@ -335,9 +345,7 @@ img {
 }
 
 .name-portfolio {
-    margin-top: 20px;
     margin-bottom: 4px;
-    margin-left: 24px;
 
     font-size: 18px;
     line-height: 2.0;
@@ -345,15 +353,16 @@ img {
 }
 
 .text {
-    margin-left: 24px;   
+    margin: 20px 24px;
 }
 
 /*footer*/
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--darc-bg);
 }
 .footer .logo {
-    padding-top: 60px;
     margin-bottom: 20px;
 }
 
